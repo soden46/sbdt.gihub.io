@@ -1,0 +1,24 @@
+<h1 mat-dialog-title>Inserisci le credenziali </h1>
+
+    <mat-form-field class="wider-field" >
+     
+      <input matInput type="email" [(ngModel)]="data.email" placeholder="Email" [formControl]="emailFormControl"
+           [errorStateMatcher]="matcher" >
+
+      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+      Perfavore inserisci un indirizzo email valido
+    </mat-error>
+    <mat-error *ngIf="emailFormControl.hasError('required')">
+      L'indirizzo email è <strong>richiesto</strong>
+    </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="wider-field" >
+      <input matInput [(ngModel)]="data.password" placeholder="Password" type='password' >
+    </mat-form-field>
+
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Annulla</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Accedi</button>
+</div>

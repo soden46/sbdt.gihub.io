@@ -1,0 +1,201 @@
+
+.navbar-space {
+margin:0px;
+background-color: green;
+}
+
+.spazio {
+  width: 300px;
+  height: 20px;
+  border: none;
+  padding: none;
+  margin: none;
+}
+
+.centerLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.logoCard{
+  min-width: 180px;
+  max-width: 400px;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.deliveryStepsSec {
+  display: flex;  
+}
+
+.deliveryBlock{
+  margin-left: auto;
+  margin-right: auto;
+  margin:auto;
+  width: 150px;
+}
+
+
+
+  
+
+.deliveryStep{
+  z-index: 5;
+  margin-left: auto;
+  margin-right: auto;
+  width:30px;
+  height:30px;
+border-radius: 50%;
+background-color:RGB(102,51,153);
+}
+.deliveryStepPre{
+  z-index: 5;
+  margin-left: auto;
+  margin-right: auto;
+  width:20px;
+  height:20px;
+  border-radius: 50%;
+  background-color:RGB(220,220,220);
+  opacity:50%;
+}
+.deliveryStepPost{
+  z-index: 5;
+  margin-left: auto;
+  margin-right: auto;
+  width:20px;
+  height:20px;
+  border-radius: 50%;
+  background-color:RGBA(102,51,153, 0.5);
+}
+
+.deliveryStepLabel {
+
+  display: flex;
+   z-index: 5;
+  position: relative;
+  padding:100px;
+  
+}
+
+.deliveryLabel{
+  z-index: 5;
+  height:30px;
+  margin-top:auto;
+   margin-bottom:auto;
+    vertical-align: bottom;
+
+   text-align: center;
+      padding:10px; 
+
+}
+/* Sezione 4 campi di modifica */
+.sec4 {
+  display: flex;
+  flex-direction: column;
+}
+/* campi dei parametridiconsegna disez4 */
+.sez4field {
+  background-color:RGB(102,51,153);
+  max-width: 200px;
+  min-width: 200px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+ margin-top:10px;
+}
+
+/* campo dell'indirizzo che ha parametri leggermentediversi da sopra */
+.sez4fieldAddress {
+  background-color:RGB(102,51,153);
+  
+  min-width: 200px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:10px;
+}
+
+/* Testo dei campi dei parametridiconsegna disez4  */
+.sez4fieldText {
+  color:beige;
+  font-size:20px;
+  margin-left: auto;
+  margin-right:auto;
+  font-weight: bold;
+ 
+}
+
+/* bottone di modifica dei campi dei parametridiconsegna disez4  */
+.modButton{
+width: 100px;
+height:30px;
+  margin-left: auto;
+  margin-right: auto;
+ margin-top:5px;
+}
+
+.modButtonText{
+  text-decoration: underline;
+  text-align:center;
+  height:30px;
+  margin:auto;
+  
+}
+
+.togglePortineria{
+  
+ 
+  border-block-end-color: nero;
+  color: green;
+
+}
+
+/* colore del toggle slider per selezione consegna in portiuneria*/
+/deep/ .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: RGB(102,51,153,0.5);
+    }
+ /deep/ .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+    background-color: RGB(102,51,153);
+}
+
+
+.card1{
+max-width:300px;
+margin:auto;
+  
+}
+
+.div1{
+  display:flex;
+  margin:auto;
+  
+}
+
+.div2{
+  display:flex;
+  margin:auto;
+  
+}
+
+.div3{
+  width:60px;
+  
+  text-align:center;
+
+}
+
+.div4{
+  width:80px;
+  
+  text-align:center;
+
+}
+
+.div5{
+  display:flex;
+ 
+}

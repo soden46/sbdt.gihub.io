@@ -1,0 +1,294 @@
+<!-- sezione0: navbar -->
+ <mat-card class = "navbar-space">
+    <p align="center"> Navbar space</p> 
+  </mat-card>
+  <div class="spazio"> </div>
+
+<!-- sezione1: Titolo -->
+ <mat-card>
+   <p align="Left"> Spedizione: {{trackingNum}}</p>
+ </mat-card>
+ <div class="spazio"> </div>
+
+<!-- sezione2: logo cliente -->
+ <mat-card class="logoCard">   
+   <img src= {{clientLogo}} width="350px" class="centerLogo">
+   </mat-card>
+   <div class="spazio"> </div>
+
+<!-- sezione3: Stato consegna sintetico -->
+ <mat-card>
+
+<section class="deliveryStepsSec">
+ <div class="deliveryBlock">
+   <!--gestiuone del colore in base a variabile deliveryState -->
+   <div class="deliveryStepPre" *ngIf="deliveryState<1"></div>
+   <div class="deliveryStep" *ngIf="deliveryState==1"></div>
+   <div class="deliveryStepPost" *ngIf="deliveryState>1"></div>
+
+   <div class="deliveryLabel">In preparazione</div>
+  </div> 
+ <div class="deliveryBlock">
+   <div class="deliveryStepPre" *ngIf="deliveryState<2"></div>
+   <div class="deliveryStep" *ngIf="deliveryState==2"></div>
+   <div class="deliveryStepPost" *ngIf="deliveryState>2"></div>
+   <div class="deliveryLabel">Prelevato</div>
+  </div>
+  <div class="deliveryBlock">
+      <div class="deliveryStepPre" *ngIf="deliveryState<3"></div>
+   <div class="deliveryStep" *ngIf="deliveryState==3"></div>
+   <div class="deliveryStepPost" *ngIf="deliveryState>3"></div>
+   <div class="deliveryLabel">In transito</div>
+  </div>  
+  <div class="deliveryBlock">
+      <div class="deliveryStepPre" *ngIf="deliveryState<4"></div>
+   <div class="deliveryStep" *ngIf="deliveryState==4"></div>
+   <div class="deliveryStepPost" *ngIf="deliveryState>4"></div>
+   <div class="deliveryLabel">In consegna</div>
+  </div>
+  <div class="deliveryBlock">
+      <div class="deliveryStepPre" *ngIf="deliveryState<5"></div>
+   <div class="deliveryStep" *ngIf="deliveryState==5"></div>
+   <div class="deliveryStepPost" *ngIf="deliveryState>5"></div>
+   <div class="deliveryLabel">Cosegnato</div>
+  </div> 
+
+</section>
+ </mat-card>
+    <div class="spazio"> </div>
+
+<!-- sezione4: Informazioni principali consegna e tasti di modifica -->
+ <mat-card>
+
+    <section  class="sec4">
+
+      <!-- giorno di Consegna -->
+        <!-- Intro -->
+        <div style="margin: auto">Consegna prevista il:</div>
+        <!-- Campo -->
+        <mat-card class="sez4field">
+          <p class="sez4fieldText">{{preselectedDate}}</p>
+        </mat-card>
+        <!-- Tasto di modifica -->
+        <button mat-button class="modButton" >
+          <div class="modButtonText">Modifica!</div>
+        </button>
+        <!-- Divisore -->
+        <div style="height:10px"> </div>
+        <div style="height:10px" ><mat-divider></mat-divider></div>
+
+      <!-- Fascia Oraria di Consegna -->
+        <!-- Intro -->
+        <div style="margin: auto">Nella fascia oraria:</div>
+        <!-- Campo -->
+        <mat-card class="sez4field">
+          <p class="sez4fieldText">{{startWindow}} - {{endWindow}}</p>
+        </mat-card>
+        <!-- Tasto di modifica -->
+        <button mat-button class="modButton" >
+          <div class="modButtonText">Modifica!</div>
+        </button>
+        <!-- Divisore -->
+        <div style="height:10px"> </div>
+        <div style="height:10px" ><mat-divider></mat-divider></div>
+
+      <!-- Indirizzo di destinazione -->
+        <!-- Intro -->
+        <div style="margin: auto">All'indirizzo:</div>
+        <!-- Campo -->
+        <mat-card class="sez4fieldAddress">
+          <p class="sez4fieldText">{{deliveryAddress}}</p>
+        </mat-card>
+        <!-- Tasto di modifica -->
+        <button mat-button class="modButton" >
+          <div class="modButtonText">Modifica!</div>
+        </button>
+        <!-- Divisore -->
+        <div style="height:10px"> </div>
+        <div style="height:10px" ><mat-divider ></mat-divider></div>
+
+      <!--  consegna in portineria -->
+        <!-- Selettore, fa comparire le impostazioni di consegna in portineria -->
+        <div style="margin: auto">Desideri la consegna in portineria:</div>
+        <div style="height:10px"> </div> <!-- spazio -->
+        <div style="margin: auto"> <mat-slide-toggle type="checkbox" [(ngModel)]="checked" class="togglePortineria" ></mat-slide-toggle> </div>  
+       <div *ngIf="checked" style="margin: auto"> Sì </div> <!-- etichetta bottone condizionale -->
+       <div *ngIf="!checked" style="margin: auto"> No </div>
+       <div *ngIf="checked" style="height:10px"> </div> <!-- spazio -->
+       <div *ngIf="checked" style="margin: auto "> Imposta orari: </div>
+      <!-- menù con le tab giorno per giorno -->
+       <mat-tab-group *ngIf="checked">
+        <mat-tab  label="Lun"> <!-- etichetta della tab del giorno -->
+          <div class="div5">
+          <div style="margin: auto">
+          <div style="height:10px"> </div> <!-- spazio -->
+    
+    <mat-card class="card1"  >
+      <div>
+      <div *ngIf="!checkedChiuso" style="text-align:center">Mattina</div>
+      <div *ngIf="checkedChiuso" style="text-align:center; color:darkgray">Mattina</div>
+      <div class="div1">
+        <div class="div2">
+          <div class="div3"><p *ngIf="!checkedChiuso" style="position:relative; margin-top:32%">Dalle:</p><p  *ngIf="checkedChiuso" style="position:relative; margin-top:32%; color:darkgray">Dalle:</p></div> 
+          <mat-form-field  class="div3" style="width:60px">
+            <mat-label></mat-label>
+            <mat-select >
+              <mat-option *ngFor="let moriningHour of moriningHours" [value]="moriningHour">{{moriningHour}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <div class="div3" style="vertical-align:bottom"><p *ngIf="!checkedChiuso" style="position:relative; margin-top:32%">alle:</p>
+          <p *ngIf="checkedChiuso" style="position:relative; margin-top:32%; color:darkgray">alle:</p></div> 
+
+          <mat-form-field class="div3" style="width:60px">
+            <mat-label></mat-label>
+            <mat-select>
+              <mat-option *ngFor="let afternoonHour of afternoonHours" [value]="afternoonHour">{{afternoonHour}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+
+</div> 
+
+                  </div> 
+        <!-- selettore per indicare la chiusura della portineria-->
+        <div style="display:flex">
+          <div *ngIf="checkedChiuso" >Chiuso?</div>
+          <div *ngIf="!checkedChiuso" style="color:darkgray">Chiuso?</div>
+             <div style="margin-left:10px"> <mat-slide-toggle (change)="chiusoMLu($event)" type="checkbox" [(ngModel)]="checkedChiuso" class="togglePortineria" ></mat-slide-toggle> </div> 
+        </div> 
+</div >
+
+
+
+
+
+    </mat-card >
+</div>
+<div style="margin: auto">
+<div style="height:10px"> </div>
+    <mat-card class="card1"  >
+      <div>
+      <div style="text-align:center">Pomeriggio</div>
+
+      <div class="div1">
+        <div class="div2">
+          <div class="div3"><p style="position:relative; margin-top:32%">Dalle:</p></div> 
+          <mat-form-field class="div3" style="width:60px">
+            <mat-label></mat-label>
+            <mat-select>
+              
+              <mat-option *ngFor="let moriningHour of moriningHours" [value]="moriningHour" (change)="tryFunction()">{{moriningHour}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <div class="div3" style="vertical-align:bottom"><p style="position:relative; margin-top:32%">alle:</p></div> 
+
+          <mat-form-field class="div3" style="width:60px">
+            <mat-label></mat-label>
+            <mat-select>
+              
+              <mat-option *ngFor="let afternoonHour of afternoonHours" [value]="afternoonHour">{{afternoonHour}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+</div> 
+                  </div> 
+</div >
+
+
+
+
+
+    </mat-card >
+
+</div>
+
+</div>
+    
+    <div class="spazio"> </div>
+     </mat-tab>
+     
+  <mat-tab label="Mar"> Content 2 </mat-tab>
+  <mat-tab label="Mer"> Content 3 </mat-tab>
+    <mat-tab label="Gio"> Content 1 </mat-tab>
+  <mat-tab label="Ven"> Content 2 </mat-tab>
+  <mat-tab label="Sab"> Content 3 </mat-tab>
+  <mat-tab label="Dom"> Content 3 </mat-tab>
+</mat-tab-group>
+       
+        
+
+   <h4>Consegna prevista il:</h4>
+<mat-form-field>
+  <mat-label>{{preselectedDate}}</mat-label>
+  <mat-select>
+    <mat-option>{{preselectedDate}}</mat-option>
+    <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+  </mat-select>
+</mat-form-field>
+   <div>Nella fascia oraria:</div>
+   <div>All'indirizzo:</div>
+      <div>Desideri la consegna in portineria?</div>
+       <div>Inserisci l'orario della portineria</div>
+
+        
+</section></mat-card>
+<div class="spazio"> </div>
+
+
+
+
+<!-- sezione5: dettagli completi ordine -->
+ <mat-card>Simple card</mat-card>
+<!-- sezione6 dx: banner prodotti cliente o altro contenuto -->
+ <mat-card>Simple card</mat-card>
+<!-- sezione7 dx: riassunto pagamento e one click checkout -->
+ <mat-card>Simple card</mat-card>
+<!-- sezione8: footer -->
+ <mat-card>Simple card</mat-card>
+
+
+
+
+
+<!-- DA QUI IN GIU VECCHIE COSE DA PORTARE SU A TEMPO DEBITO -->
+
+
+
+<ol>
+  <li>
+    <mat-form-field>
+      <input matInput [(ngModel)]="name" placeholder="What's your name?">
+    </mat-form-field>
+  </li>
+  <li>
+    <button mat-raised-button (click)="openDialog()">Pick one</button>
+  </li>
+  <li *ngIf="animal">
+    You chose: <i>{{animal}}</i>
+  </li>
+</ol>
+
+
+
+<!-- Parte nuova di test -->
+<div> 
+ <button mat-raised-button (click)="penDialog()">Accedi</button>
+</div>
+
+<!-- QUI HO RIPORTATO QUELLO CHE HO ESTRATTO DAL DIALOG ATTRAVERSO L'OGGETTO DATA.xxx ... credo -->
+<div *ngIf="email">Hai inserito questa email: <i>{{email}}</i></div>
+<div *ngIf="password">Hai inserito questa pass: <i>{{password}}</i></div> <!-- possibile problema di sicurezza perhchè qui la password è in chiaro -->
+
+
+
+
+<!-- Copyright 2019 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
+
+
+
+    
+
+    
