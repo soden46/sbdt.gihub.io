@@ -1,0 +1,185 @@
+/**
+* @author  ceffectz
+* @version 1.1
+* @website www.ceffectz.com
+*/
+
+@media only screen and (max-width: 320px) {
+    .row-centered1 {
+        text-align: left;
+    }
+    .bv-form .help-block {
+        margin-top: -10px !important;
+    }
+    .glyphicon {
+        left: 115px !important;
+    }
+}
+@media (max-width: 360px) {
+    .errormsg {
+        margin-top: 0px;
+        margin-top: 10px !important;
+        color: red;
+    }
+}
+@media (min-width: 360px) {}@media only screen and (max-width: 360px) {
+    .glyphicon {
+        left: 115px !important;
+    }
+}
+@media only screen and (max-width: 480px) {}@media only screen and (max-width: 480px) {
+    .row-centered1 {
+        text-align: left;
+    }
+    .form-control {
+        width: 100%;
+        margin-left: 28px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .textbox-btn {
+        display: none;
+    }
+    .form-control {
+        width: 90%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .h3center {
+        text-align: center !important;
+        font-size: 30px !important;
+    }
+    .help-block {
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+    .trackbtn {
+        margin-left: 13px !important;
+    }
+    .moblieview-orderprosess {
+        display: none;
+    }
+    .input-group .form-control {
+        width: 94% !important;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .form-control {
+        width: 90%;
+        margin-left: 10px;
+        margin-right: 9px;
+    }
+    .help-block {
+        margin-left: 18px;
+        font-size: 12px !important;
+    }
+    .input-group-btn:last-child>.btn {
+        margin-left: 0px !important;
+    }
+    .bv-form .help-block {
+        margin-top: -9px;
+    }
+}
+@media only screen and (min-width: 480px) {
+    .bv-form .help-block {
+        margin-top: 6px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .textbox-btnmbview {
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-9 {
+        width: 71.333% !important;
+    }
+    .divstyle {
+        padding: 0px 0px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .thumbmale {
+        width: 230px !important;
+    }
+    .item {
+        margin: 4px;
+    }
+    .imgwidth {
+        width: 155px;
+        height: 155px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .thumbmale {
+        width: 230px !important;
+    }
+    .item {
+        margin: 24px;
+    }
+    .imgwidth {
+        width: 165px;
+        height: 165px;
+    }
+    .bv-form .help-block {
+        margin-top: -4px;
+    }
+    .glyphicon {
+        left: 125px;
+    }
+}
+@media only screen and (max-width: 1124px) {
+    .glyphicon {
+        left: 100px;
+    }
+}
+@media (max-width: 997px) {
+    .divcusrow {
+        display: none;
+    }
+    .item {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin: 4px;
+    }
+}
+@media (min-width: 997px) {
+    .moblieview-orderprosess {
+        display: none;
+    }
+}
+@media (max-width: 779px) {
+    .col-sm-3 {
+        width: 25%;
+    }
+}
+@media (min-width: 1119px) {
+    .divstyle {
+        padding: 5px 8px;
+    }
+}
+@media (max-width: 992px) {
+    .divstyle {
+        padding: 5px 8px;
+        float: left;
+    }
+    .thumbmale {
+        width: 222px !important;
+    }
+    .glyphicon {
+        left: 148px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .thumbmale {
+        margin-bottom: 18px !important;
+    }
+}
+@media (max-width: 991px) {
+    .item {
+        margin: 0 auto !important;
+    }
+    .thumbmale {
+        margin-bottom: 18px !important;
+    }
+}

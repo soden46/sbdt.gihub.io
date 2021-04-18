@@ -1,0 +1,377 @@
+@import url(bootstrap.css);
+.icon,
+.icon-arrows-after,
+.icon-arrows-before,
+.icon-facebook_logo,
+.icon-linkedin_logo,
+.icon-nota-green,
+.icon-nota-orange,
+.icon-notes-green,
+.icon-notes-set,
+.icon-quotes-after-green,
+.icon-quotes-after,
+.icon-quotes-before-green,
+.icon-quotes-before,
+.icon-twitter_logo,
+section#content .with-green-notes li:before,
+section#content .with-green-notes.another-notes li:before,
+section#content article.testimonials ul.testimonials-list li cite:before,
+section#content article.testimonials ul.testimonials-list li cite:after,
+section#content .carousel .carousel-inner .item cite:before,
+section#content .carousel .carousel-inner .item cite:after {
+    background: url('../img/icon-s8efcfafc78.png') no-repeat;
+}
+.icon-arrows-after {
+    background-position: 0 0;
+    height: 35px;
+    width: 16px;
+}
+section#content article.intro-v2 {
+    padding: 98px 0 75px 0;
+    color: #5f5f5f;
+}
+@media (max-width: 768px) {
+    section#content article.intro-v2 {
+        padding: 50px 0 26px 0;
+    }
+}
+section#content article.intro-v2 h3 {
+    margin: -8px 0px 0px 0px;
+    line-height: 100%;
+    padding: 0;
+}
+section#content article.intro-v2 ul.with-green-notes {
+    margin: 62px 20px 59px 167px;
+}
+@media (max-width: 768px) {
+    section#content article.intro-v2 ul.with-green-notes {
+        margin: 30px 20px 20px 30px;
+    }
+}
+section#content article.intro-v2 p {
+    margin-bottom: 33px;
+}
+section#content article.why-us {
+    border-top: 1px solid #f0e7dc;
+    border-bottom: 1px solid #f0e7dc;
+    background: #fffbf7;
+    color: #5f5f5f;
+    padding: 39px 0 148px 0;
+}
+@media (max-width: 768px) {
+    section#content article.why-us {
+        padding: 26px 0 50px 0;
+    }
+}
+section#content article.why-us ul.with-green-notes {
+    margin: 52px 20px 86px 53px;
+}
+@media (max-width: 768px) {
+    section#content article.why-us ul.with-green-notes {
+        margin: 20px 20px 30px 40px;
+    }
+}
+section#content article.why-us p {
+    margin-bottom: 30px;
+}
+section#content article.why-us h3 img {
+    position: relative;
+    top: -3px;
+}
+section#content article.why-us h3.middle-header {
+    margin: 57px 0 0px 0;
+}
+section#content article.testimonials {
+    padding: 58px 0 50px 0;
+    color: #5f5f5f;
+}
+@media (max-width: 768px) {
+    section#content article.testimonials {}
+}
+section#content article.testimonials h3 {
+    margin: 19px 0px 24px 0px;
+}
+section#content article.testimonials p {} section#content article.testimonials ul.testimonials-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 768px) {
+    section#content article.testimonials ul.testimonials-list {
+        margin: 60px 0;
+    }
+}
+section#content article.testimonials ul.testimonials-list li {
+    margin: 105px 0px 142px 0px;
+    position: relative;
+    text-align: center;
+}
+section#content article.testimonials ul.testimonials-list li:last-child {
+    margin: 105px 0px 57px 0px;
+}
+@media (max-width: 768px) {
+    section#content article.testimonials ul.testimonials-list li {
+        margin: 40px 0px 20px 0px !important;
+    }
+}
+section#content article.testimonials ul.testimonials-list li cite:before {
+    content: '';
+    position: relative;
+    top: -19px;
+    left: -20px;
+    background-position: -1425px 0;
+    height: 13px;
+    width: 21px;
+}
+section#content article.testimonials ul.testimonials-list li cite:after {
+    content: '';
+    position: relative;
+    top: 7px;
+    right: -19px;
+    background-position: -1183px 0;
+    height: 13px;
+    width: 21px;
+}
+section#content article.testimonials ul.testimonials-list li p.name {
+    margin: 15px 0;
+}
+section#content article.testimonials .outro-region p {
+    font-size: 1.4em;
+    margin-bottom: 29px;
+}
+section#content article.testimonials .img-books {
+    margin: 76px auto 83px auto;
+}
+@media (max-width: 768px) {
+    section#content article.testimonials .img-books {
+        margin: 40px auto 50px auto;
+    }
+}
+section#content article.testimonials .btn-success {
+    padding: 13px 93px;
+}
+section#content .carousel {
+    margin-top: -10px;
+}
+section#content .carousel .carousel-inner .item {
+    text-align: center;
+}
+section#content .carousel .carousel-inner .item cite {
+    display: block;
+    margin: auto;
+    max-width: 790px;
+    position: relative;
+    color: #5f5f5f;
+}
+section#content .carousel .carousel-inner .item cite:before {
+    content: '';
+    position: relative;
+    top: -13px;
+    left: -12px;
+    background-position: -1546px 0;
+    height: 13px;
+    width: 21px;
+}
+section#content .carousel .carousel-inner .item cite:after {
+    content: '';
+    position: relative;
+    top: -13px;
+    right: -16px;
+    background-position: -1304px 0;
+    height: 13px;
+    width: 21px;
+}
+section#content .carousel .carousel-indicators {
+    bottom: -40px;
+}
+section#content .carousel .carousel-indicators li {
+    background: #B2B4B4;
+    margin-bottom: 0px;
+}
+section#content .carousel .carousel-indicators li.active {
+    background: #0fb6ac;
+    margin-bottom: 0px;
+}
+section#content .carousel .carousel-control {
+    width: 0px;
+    height: 0px;
+    background: #fff !important;
+    margin-top: 190px;
+    filter: none;
+}
+section#content .carousel .carousel-control span {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+}
+section#content .carousel .carousel-control.left span {
+    left: 1px;
+}
+section#content .carousel .carousel-control.right span {
+    right: 1px;
+}
+section#content article.intro {
+    /*padding: 74px 0 113px 0;*/
+    color: #5f5f5f;
+    padding-left: 7px;
+}
+section#content article.intro p.bigger {
+    margin: 44px 0 50px 0;
+    @media (max-width: 768px) {
+        section#content article.intro {
+            padding: 40px 0 10px 0;
+        }
+    }
+}
+section#content article.intro .discover-region {
+    padding: 0px 15px 124px 200px;
+}
+@media (max-width: 768px) {
+    section#content article.intro .discover-region {
+        padding: 0px 15px 30px 15px;
+    }
+}
+section#content article.questions {
+    padding: 39px 0 54px 0;
+    background: #fffbf7;
+    border-top: 1px solid #f0e7dc;
+    border-bottom: 1px solid #f0e7dc;
+    text-align: center;
+    color: #5f5f5f;
+}
+section#content article.questions h3 {
+    margin-bottom: 54px;
+}
+section#content article.questions p {
+    margin-bottom: 12px;
+}
+section#content article.questions p.question {} section#content article.questions p.question strong {} section#content article.questions .answers {
+    padding: 22px 0 0px 0;
+}
+section#content article.two-things-in-mind {
+    padding: 86px 0 61px 0;
+    color: #5f5f5f;
+    border-bottom: 1px solid #f0e7dc;
+}
+@media (max-width: 768px) {
+    section#content article.two-things-in-mind {
+        padding: 40px 0 25px 0;
+    }
+}
+section#content article.two-things-in-mind .container {
+    max-width: 1213px;
+}
+section#content article.two-things-in-mind h3 {
+    margin-bottom: 46px;
+    color: #33752e;
+    text-align: left;
+}
+section#content article.two-things-in-mind ul.numbers {
+    margin: 0px 27px 0px 27px;
+    padding: 0;
+    list-style: none;
+}
+section#content article.two-things-in-mind ul.numbers li {
+    padding-left: 30px;
+    position: relative;
+    line-height: 148%;
+    margin-bottom: 47px;
+}
+section#content article.two-things-in-mind ul.numbers li .number {
+    position: absolute;
+    top: 2px;
+    left: -27px;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    color: #33752e !important;
+    border-radius: 100%;
+    border: 3px solid #33752e;
+}
+section#content article.musician-say {
+    padding: 109px 0 93px 0;
+    color: #5f5f5f;
+}
+@media (max-width: 768px) {
+    section#content article.musician-say {
+        padding: 60px 0 26px 0;
+    }
+}
+section#content article.musician-say .with-notes {
+    margin-bottom: 41px;
+}
+section#content article.musician-say h4 {} section#content article.musician-say .carousel {
+    margin-top: 0;
+}
+section#content article.musician-say .carousel .carousel-inner .item cite {
+    max-width: 1050px;
+    color: #5f5f5f;
+}
+section#content article.musician-say .carousel .carousel-control {
+    z-index: 10000;
+}
+section#content article.musician-say .carousel .carousel-control span {
+    position: absolute;
+    top: 50%;
+    margin-top: -45px;
+}
+section#content article.package-for {
+    padding: 124px 0 106px 0;
+    color: #5f5f5f;
+}
+@media (max-width: 768px) {
+    section#content article.package-for {
+        padding: 60px 0 40px 0;
+    }
+}
+section#content article.package-for .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+@media (max-width: 768px) {
+    section#content article.package-for .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+section#content article.package-for h3 {
+    margin: 49px 0 54px 0;
+}
+section#content article.package-for p {
+    margin-bottom: 30px;
+}
+section#content article.package-for ul.with-green-notes {
+    margin: 10px 71px;
+}
+section#content article.book-now {
+    background: #fffbf7;
+    padding: 70px 0 96px 0;
+    text-align: center;
+}
+section#content article.book-now .container {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+section#content article.book-now .img-moneyback {
+    margin: 10px auto 49px auto;
+}
+section#content article.book-now .img-books {
+    margin: 83px auto 88px auto;
+}
+section#content article.book-now p {
+    margin-bottom: 34px;
+}
+section#content article.book-now .btn-holder {
+    padding: 10px 0 10px 0;
+}
+section#content article.book-now .btn-holder .btn-success {
+    padding: 12px 24px;
+}
+.btn:hover,
+.btn:focus {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5) !important;
+}
+.img-responsive {
+    margin: auto;
+    display: block;
+}

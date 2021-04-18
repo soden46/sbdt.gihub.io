@@ -1,0 +1,298 @@
+a.thumbmale,
+a.thumbfemale,
+a.thumbunisex,
+a.thumbother {
+    position: relative;
+    width: 230px;
+    float: left;
+    height: 322px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    text-align: center;
+    display: block;
+    text-decoration: none!important;
+    transition: border 500ms ease-out;
+    -webkit-transition: border 500ms ease-out;
+    -moz-transition: border 500ms ease-out;
+    -o-transition: border 500ms ease-out;
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
+}
+.ie7 a.thumbmale,
+.ie7 a.thumbfemale,
+.ie7 a.thumbunisex,
+.ie7 a.thumbother {
+    border-color: #ccc;
+}
+.ie8 a.thumbmale,
+.ie8 a.thumbfemale,
+.ie8 a.thumbunisex,
+.ie8 a.thumbother {
+    border-color: #ccc;
+}
+a.thumbmale:hover,
+a.thumbfemale:hover,
+a.thumbunisex:hover,
+a.thumbother:hover {
+    -webkit-transition: opacity 1000ms linear;
+    -moz-transition: opacity 1000ms linear;
+    -o-transition: opacity 1000ms linear;
+    -ms-transition: opacity 1000ms linear;
+    transition: opacity 1000ms linear;
+    text-decoration: underline;
+    border-color: #888;
+}
+a.thumbmale:hover {
+    background: url(http://www.feelingsexy.com.au/images/xmale.png.pagespeed.ic.P2cXdZjxUB.webp) no-repeat;
+    background-position: 10px 10px;
+}
+a.thumbfemale:hover {
+    background: url(http://www.feelingsexy.com.au/images/xfemale.png.pagespeed.ic.K4Bi7jpz7i.webp) no-repeat;
+    background-position: 10px 10px;
+}
+a.thumbunisex:hover {
+    background: url(http://www.feelingsexy.com.au/images/xunisex.png.pagespeed.ic.odP2wYDiFT.webp) no-repeat;
+    background-position: 10px 10px;
+}
+a.thumbother:hover {
+    background-position: 10px 10px;
+}
+a.thumbproduct,
+a.thumbproduct_sale,
+a.thumbproduct_result,
+a.thumbproductsale,
+a.thumbproductmale_sale,
+a.thumbproductfemale_sale,
+a.thumbproductunisex_sale,
+a.thumbfragrances,
+a.thumbproductmale_result,
+a.thumbproductfemale_result,
+a.thumbproductunisex_result,
+a.thumbproductmale_tab,
+a.thumbproductother_tab,
+a.thumbproductfemale_tab,
+a.thumbproductunisex_tab,
+a.thumbproductniche_male,
+a.thumbproductniche_female,
+a.thumbproductniche_unisex,
+.thumbblog {
+    float: left;
+    border: 1px #fff solid;
+    text-align: left;
+    display: block;
+    text-decoration: none!important;
+    transition: border 500ms ease-out;
+    -webkit-transition: border 500ms ease-out;
+    -moz-transition: border 500ms ease-out;
+    -o-transition: border 500ms ease-out;
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
+}
+.ie7 a.thumbproduct,
+.ie7 a.thumbproduct_sale,
+.ie7 a.thumbproduct_result,
+.ie7 a.thumbproductsale,
+.ie7 a.thumbproductmale_sale,
+.ie7 a.thumbproductfemale_sale,
+.ie7 a.thumbproductunisex_sale,
+.ie7 a.thumbfragrances,
+.ie7 a.thumbproductmale_result,
+.ie7 a.thumbproductfemale_result,
+.ie7 a.thumbproductunisex_result,
+.ie7 a.thumbproductmale_tab,
+.ie7 a.thumbproductother_tab,
+.ie7 a.thumbproductfemale_tab,
+.ie7 a.thumbproductunisex_tab,
+.ie7 a.thumbproductniche_male,
+.ie7 a.thumbproductniche_female,
+.ie7 a.thumbproductniche_unisex,
+.ie7 .thumbblog {
+    border: 1px #ccc solid;
+}
+.ie8 a.thumbproduct,
+.ie8 a.thumbproduct_sale,
+.ie8 a.thumbproduct_result,
+.ie8 a.thumbproductsale,
+.ie8 a.thumbproductmale_sale,
+.ie8 a.thumbproductfemale_sale,
+.ie8 a.thumbproductunisex_sale,
+.ie8 a.thumbfragrances,
+.ie8 a.thumbproductmale_result,
+.ie8 a.thumbproductfemale_result,
+.ie8 a.thumbproductunisex_result,
+.ie8 a.thumbproductmale_tab,
+.ie8 a.thumbproductother_tab,
+.ie8 a.thumbproductfemale_tab,
+.ie8 a.thumbproductunisex_tab,
+.ie8 a.thumbproductniche_male,
+.ie8 a.thumbproductniche_female,
+.ie8 a.thumbproductniche_unisex,
+.ie8 .thumbblog {
+    border: 1px #ccc solid;
+}
+a.thumbproduct {
+    width: 168px;
+    height: 283px;
+}
+.thumbblog,
+.thumbblogimg,
+.thumbblogcontent,
+.thumbbloghover {
+    padding: 10px;
+    margin: 10px;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    -moz-flex-display: flex;
+    -webkit-flex-display: flex;
+    -ms-flex-display: flex;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    align-items: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+}
+.thumbblog {
+    position: relative;
+    z-index: 0;
+    background-color: #000;
+}
+.thumbblogimg,
+.thumbblogcontent,
+.thumbbloghover {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+.thumbblogimg {
+    z-index: 1;
+    opacity: .6;
+    background-position: center center;
+}
+.thumbblogcontent {
+    z-index: 2;
+}
+.thumbbloghover {
+    z-index: 3;
+    background-color: #fff;
+}
+a {
+    color: #333;
+    text-decoration: underline;
+}
+a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+a.link {
+    font-size: 13px;
+    color: #333;
+    text-decoration: none;
+}
+a.link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+.smpg {
+    color: #666!important;
+}
+.smpbg,
+.smpbbg {
+    color: #000;
+    font-size: 13px;
+    line-height: 16px;
+}
+.smpbbg {
+    font-family: "myGothicb", Arial, Helvetica, sans-serif;
+}
+.smpbgi {
+    font-style: italic;
+    font-size: 12px;
+    color: #000;
+    line-height: 14px;
+}
+.saleprice {
+    color: #f60;
+    font-size: 13px;
+    line-height: 14px;
+}
+.salepricebig {
+    color: #f60;
+    font-size: 25px;
+    line-height: 26px;
+}
+.pricebig,
+.reviews_Txt {
+    color: #333;
+    font-size: 25px;
+    line-height: 26px;
+}
+.orderno {
+    letter-spacing: 2px;
+}
+.thumbtitle,
+.newstitle,
+.h4 {
+    font-size: 15px;
+    font-family: "myGothicb", Arial, Helvetica, sans-serif;
+}
+.newstitle {
+    line-height: 25px;
+}
+.reviews_bgTxt {
+    font-size: 35px;
+    color: #000;
+}
+.thumbtitleindex {
+    font-size: 16px;
+    font-family: "myGothicb", Arial, Helvetica, sans-serif;
+    line-height: 19px;
+}
+.thumbprice,
+.thumbpricesale {
+    position: absolute;
+    bottom: 43px;
+    width: 140px;
+}
+.thumbpriceindex {
+    position: absolute;
+    bottom: 20px;
+}
+.thumbdescription {
+    padding: 10px;
+    text-align: left;
+}
+.pricereg,
+.priceregbg,
+.pricesale {
+    text-align: left;
+    font-family: "myGothicb", Arial, Helvetica, sans-serif;
+    line-height: 14px;
+}
+.pricereg {
+    color: #000;
+    font-size: 16px;
+}
+.pricesale {
+    color: #f60;
+    font-size: 16px;
+}
+.priceregbg {
+    font-size: 17px;
+    color: #000;
+}

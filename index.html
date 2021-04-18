@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Feeling Sexy - Track your Parcel</title>
+    <meta name="generator" content="Feeling Sexy" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/bootstrapValidator.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mediaquary.css">
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.js"></script>
+    <script type="text/javascript" src="js/jspatch.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#test1").click(function () {
+                $('.help-block').addClass('errormsg');
+            });
+
+            $("#removeClass").click(function () {
+                $('#paragraph1').removeClass('shaded');
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container-full">
+        <div class="cus-row-section">
+            <div class="row">
+                <!--Logo-->
+                <div class="logo">
+                    <img src="./img/FeelingSexy.png" class="" alt="Circular Image">
+                </div>
+
+                <div class="col-lg-12 text-center v-center">
+                    <div class="row">
+
+                    </div>
+                    <!--gift-icon-->
+                    <div class="gifticon">
+                        <img src="./img/gift.png" class="aboutlogo" alt="Circular Image">
+                    </div>
+                    <h1>Order Tracking</h1>
+                    <div class="row">
+                        <div class="col-md-4 "></div>
+                        <div class="col-md-4 ">
+                            <p class="lead">Please select either one of the choices from above,
+                                <br>To track your Parcel.</p>
+                            <hr class="style-two" ;>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                    <br>
+                    <form class=" form-horizontal col-lg-12" id="defaultForm" action="ajaxSubmit.php" method="post">
+
+                        <div class="container">
+                            <div class="row row-centered1">
+
+                                <div class="col-md-1 col-centered">
+                                    <input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" />
+                                    <label for="radio1" class="css-label radGroup1 radGroup1">Email</label>
+                                </div>
+
+
+                                <div class="col-md-2 col-centered">
+                                    <input type="radio" name="radiog_lite" id="radio2" class="css-checkbox" checked="checked" />
+                                    <label for="radio2" class="css-label radGroup1 radGroup1">Tracking Number</label>
+                                </div>
+
+
+                                <div class=" col-md-2 col-centered">
+                                    <input type="radio" name="radiog_lite" id="radio3" class="css-checkbox" />
+                                    <label for="radio3" class="css-label radGroup1 radGroup1">Invoice Number</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!--container-->
+
+
+                        <br>
+                        <br>
+
+
+                        <div class="container txtcenter">
+                            <div class="textbox-btn">
+                                <div class="row row-centered">
+                                    <div class="col-xs-3 col-xs-03cuswidth">
+
+                                    </div>
+
+                                    <div class="col-xs-3">
+                                        <div class="form-group ">
+                                            <input type="text" class="form-control cus-txt" name="itemnumber" placeholder="LVG0115552010223">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-xs-2">
+
+                                        <span class="input-group-btn"><button class="btn btn-lg btn-primary trackbtn" type="submit">Track</button></span>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--textbox-btn-->
+                        </div>
+                        <!--container-->
+
+                        <!--mobile view-->
+                        <div class="">
+                            <div class="textbox-btnmbview">
+                                <div class="row">
+
+                                    <div class="col-sm-4">
+                                        <div class="form-group ">
+                                            <input type="text" class="form-control cus-txt" name="itemnumber" placeholder="LVG0115552010223">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-sm-4">
+
+                                        <span class="input-group-btn"><button class="btn btn-lg btn-primary trackbtn" type="submit">Track</button></span>
+
+                                    </div>
+                                    <div class="col-sm-4">
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--textbox-btn-->
+                        </div>
+                        <!--container-->
+
+                    </form>
+
+
+
+                </div>
+            </div>
+            <!--/row-->
+        </div>
+        <!--/-section 01-->
+        <div class="row">
+            <div class="col-lg-12 text-center v-center" style="font-size:39pt;"><a href="#"><i class="icon-google-plus"></i></a><a href="#"><i class="icon-facebook"></i></a><a href="#"><i class="icon-twitter"></i></a><a href="#"><i class="icon-github"></i></a><a href="#"><i class="icon-pinterest"></i></a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <!--/container full-->
+
+    <div class="bgcolor">
+        <div class="container">
+            <!--/desktop view-->
+            <div class="divcusrow">
+                <div class="row">
+
+                    <div class="col-md-1 cuscol-md-1padding col-md-1cus">
+                        <div class="">
+                            <div class="iconmark">
+                                <img src="./img/Checkmark.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                            <div class="">
+                                <img src="./img/Orderprocess/Icon1BW.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                            <div class="ordprocesstest">
+                                <p>1<span class="ordprocesstest-span">Order Received</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 cuscol-md-2padding col-md-1cus">
+                        <div class="">
+                            <div class="line">
+                                <img src="./img/line2.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                            <div class=""></div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 cuscol-md-1padding col-md-1cus">
+                        <div class="">
+                            <div class="iconmark">
+                                <img src="./img/Checkmark.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                            <div class="">
+                                <img src="./img/Orderprocess/Icon2BW.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                            <div class="ordprocesstest">
+                                <p>2<span class="ordprocesstest-span">Packed and Dispatched</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 cuscol-md-2padding col-md-1cus">
+                        <div class="">
+                            <div class=""></div>
+                            <div class="line">
+                                <img src="./img/line2.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 cuscol-md-1padding col-md-1cus">
+                        <div class="">
+                            <div class="iconmark">
+                                <img src="./img/Elipse.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                            <div class="">
+                                <img src="./img/Orderprocess/Icon3.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                            <div class="ordprocesstest">
+                                <p>3<span class="ordprocesstest-span">In Transit</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 cuscol-md-2padding col-md-1cus">
+                        <div class="">
+                            <div class=""></div>
+                            <div class="line">
+                                <img src="./img/line2.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 cuscol-md-1padding col-md-1cus">
+                        <div class="">
+                            <div style="padding-top:30px;">
+                                <img src="./img/Orderprocess/Icon4BW.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                            <div class=""></div>
+                            <div class="ordprocesstest">
+                                <p>4<span class="ordprocesstest-span">Delivered</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="col-md-2">
+                            <div class="">
+                                <div class=""></div>
+                                <div class=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--</div>-->
+                    <!--col-lg-12-END"-->
+
+                </div>
+                <!--row-->
+            </div>
+            <!--divcusrow-->
+
+
+
+
+
+            <!--mobile-view-->
+            <div class="moblieview-orderprosess">
+                <div class="row">
+                    <div class="container">
+
+                        <div class="col-sm-3">
+                            <div class="ordprocesstest">
+                                <p>1<span class="ordprocesstest-span">Order Received</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="ordprocesstest">
+                                <p>2<span class="ordprocesstest-span">Packed and Dispatched</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="ordprocesstest">
+                                <p>3<span class="ordprocesstest-span">In Transit</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="ordprocesstest">
+                                <p>4<span class="ordprocesstest-span">Delivered</span> 
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--row-->
+                </div>
+                <!--container-->
+            </div>
+            <!--moblieview-orderprosess-->
+
+
+
+            <!-- table-->
+            <div class="row panel-bottom-line">
+
+                <div class="col-md-2 col-md-2cus">
+                    <div class="">
+
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <h3>Package Details - LVG0115552010223</h3>
+
+                                </div>
+
+                                <div class="col-md-5 col-md-2cus">
+
+                                    <!-- Use this CSS class to enable >> In Transit -->
+
+                                    <div class=" col-md-3 divstyle">
+                                        In Transit
+                                    </div>
+
+                                    <!-- Use this CSS class to enable >> Order Received -->
+
+                                    <!--
+                                    <div class=" col-md-3 divstyle">
+                                    Order Received
+                                    </div>
+                                    -->
+
+                                    <!-- Use this CSS class to enable >> Packed and Dispatched -->
+
+                                    <!--
+                                    <div class=" col-md-3 divstyle">
+                                    Packed and Dispatched
+                                    </div>
+                                    -->
+
+                                    <!-- Use this CSS class to enable >> Delivered -->
+
+                                    <!--
+                                    <div class=" col-md-3 divstyle-green">
+                                    Delivered
+                                    </div>
+                                    -->
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <p class="panel-body-p-bold" ;>Email Address</p>
+                                    <p class="panel-body-p-bold" ;>Invoice Number</p>
+                                    <p class="panel-body-p-bold" ;>Service</p>
+                                </div>
+
+                                <!--<div class="col-md-1">
+                     
+                              </div>-->
+
+                                <div class="col-md-5 table5">
+                                    <p>andrewcolin@gmail.com</p>
+                                    <p>00001277</p>
+                                    <p>eParcel</p>
+                                </div>
+                                <!-- <div class="col-md-1">
+                              </div>-->
+                                <div class="col-md-4">
+                                    <p class="panel-body-p-bold" ;>Signature</p>
+                                    <img src="./img/sign.png" class="aboutlogo img-responsive" alt="Circular Image">
+                                </div>
+
+                            </div>
+                            <h3 class="panel-heading1">More details - LVG0115552010223<h3>
+                            </div>
+                            <hr>
+                            <!--table02-->
+                            <div class="panel-body">
+                             <div class="row">
+                              <div class="col-md-3">
+                                <p class="panel-body-p-bold";>Date/Time  </p>
+                                <p>Thu 02 Oct 2014 08:47</p>
+                                <p>Tue 30 Sep 2014 17:55</p>
+                                <p>Tue 30 Sep 2014 17:25 </p>
+                              </div>
+                              
+                  <!--<div class="col-md-1">
+                     
+                </div>-->
+
+                <div class="col-md-5 table5">
+                  <p class="panel-body-p-bold";>Activity   </p>
+                  <p>Processed through Australia Post facility  </p>
+                  <p>Processed through Australia Post facility  </p>
+                  <p>Shipping information received by Australia Post</p>
+                </div>
+                 
+                <div class="col-md-4">
+                  <p class="panel-body-p-bold";>Location</p>
+                  <p>GAWLER SA</p>
+                  <p>UNSHINE WEST VIC</p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-2 col-md-2cus">
+          <div class="">
+            <div class=""></div>
+            <div class="">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div><!--container-->
+  </div><!--section01-->
+
+
+  <!-- Slider section -->
+  <div class="cusrowsection03">
+    <div class="container">
+     <h2 > Recent Products</h2>
+
+    <div class="row row-centered">
+      <section id="content" role="main">
+        
+        <article class="intro">
+          
+          <div class="">
+            
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                    
+<!-- ITEM 1 -->      
+               
+<div class="col-md-4 slidercustomrow item">
+
+    <a class="thumbmale" style="margin-left: 0" href="the-one-sport-giftset-by-dolce-and-gabbana-300349/">
+        <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
+            <div class="ribbon-new">
+                New</div>
+        </div>
+        <div class="">
+        <img src="./img/products/allproducts/dolcegabbana_theonesport_giftset1.jpg" class="imgwidth" alt="The One Sport Giftset" title="The One Sport Giftset">
+        </div>
+        <br>
+        <div class="thumbdescription">
+            <div class=" thumbtitleindex">
+                The One Sport Giftset
+            </div>
+            <div class="clear" style="height: 10px;">
+            </div>
+            <div class="smpbg">
+                Eau de Toilette by Dolce And Gabbana
+            </div>
+            <div class="clear" style="height: 5px;">
+            </div>
+            <div class="thumbpriceindex">
+                <span class="smpbg">From: </span><span class="pricereg">$59.95</span>
+            </div>
+        </div>
+    </a>
+</div>
+               
+<!-- ITEM 2 -->      
+               
+<div class="col-md-4 slidercustomrow item">
+
+    <a class="thumbmale" style="margin-left: 0" href="the-one-sport-giftset-by-dolce-and-gabbana-300349/">
+        <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
+            <div class="ribbon-new">
+                New</div>
+        </div>
+       <div class="">
+        <img src="./img/products/allproducts/dolcegabbana_theonesport_giftset1.jpg" class="imgwidth" alt="The One Sport Giftset" title="The One Sport Giftset">
+        </div>
+        <br>
+        <div class="thumbdescription">
+            <div class=" thumbtitleindex">
+                The One Sport Giftset
+            </div>
+            <div class="clear" style="height: 10px;">
+            </div>
+            <div class="smpbg">
+                Eau de Toilette by Dolce And Gabbana
+            </div>
+            <div class="clear" style="height: 5px;">
+            </div>
+            <div class="thumbpriceindex">
+                <span class="smpbg">From: </span><span class="pricereg">$59.95</span>
+            </div>
+        </div>
+    </a>
+</div>
+
+               
+<!-- ITEM 3 -->      
+               
+<div class="col-md-4 slidercustomrow item">
+
+    <a class="thumbmale" style="margin-left: 0" href="the-one-sport-giftset-by-dolce-and-gabbana-300349/">
+        <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
+            <div class="ribbon-new">
+                New</div>
+        </div>
+        <div class="">
+        <img src="./img/products/allproducts/dolcegabbana_theonesport_giftset1.jpg" class="imgwidth" alt="The One Sport Giftset" title="The One Sport Giftset">
+        </div>
+        <br>
+        <div class="thumbdescription">
+            <div class=" thumbtitleindex">
+                The One Sport Giftset
+            </div>
+            <div class="clear" style="height: 10px;">
+            </div>
+            <div class="smpbg">
+                Eau de Toilette by Dolce And Gabbana
+            </div>
+            <div class="clear" style="height: 5px;">
+            </div>
+            <div class="thumbpriceindex">
+                <span class="smpbg">From: </span><span class="pricereg">$59.95</span>
+            </div>
+        </div>
+    </a>
+</div>
+               
+               
+<!-- ITEM 4 -->      
+               
+<div class="col-md-4 slidercustomrow item">
+
+    <a class="thumbmale" style="margin-left: 0" href="the-one-sport-giftset-by-dolce-and-gabbana-300349/">
+        <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
+            <div class="ribbon-new">
+                New</div>
+        </div>
+        <div class="">
+        <img src="./img/products/allproducts/dolcegabbana_theonesport_giftset1.jpg" class="imgwidth" alt="The One Sport Giftset" title="The One Sport Giftset">
+        </div>
+        <br>
+        <div class="thumbdescription">
+            <div class=" thumbtitleindex">
+                The One Sport Giftset
+            </div>
+            <div class="clear" style="height: 10px;">
+            </div>
+            <div class="smpbg">
+                Eau de Toilette by Dolce And Gabbana
+            </div>
+            <div class="clear" style="height: 5px;">
+            </div>
+            <div class="thumbpriceindex">
+                <span class="smpbg">From: </span><span class="pricereg">$59.95</span>
+            </div>
+        </div>
+    </a>
+</div>
+             
+                    
+           </div>
+           
+                  
+<div class="item">
+               
+<!-- ITEM 5 -->      
+               
+<div class="col-md-4 slidercustomrow item">
+
+    <a class="thumbmale" style="margin-left: 0" href="the-one-sport-giftset-by-dolce-and-gabbana-300349/">
+        <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
+            <div class="ribbon-new">
+                New</div>
+        </div>
+        <div class="">
+        <img src="./img/products/allproducts/dolcegabbana_theonesport_giftset1.jpg" class="imgwidth" alt="The One Sport Giftset" title="The One Sport Giftset">
+        </div>
+        <br>
+        <div class="thumbdescription">
+            <div class=" thumbtitleindex">
+                The One Sport Giftset
+            </div>
+            <div class="clear" style="height: 10px;">
+            </div>
+            <div class="smpbg">
+                Eau de Toilette by Dolce And Gabbana
+            </div>
+            <div class="clear" style="height: 5px;">
+            </div>
+            <div class="thumbpriceindex">
+                <span class="smpbg">From: </span><span class="pricereg">$59.95</span>
+            </div>
+        </div>
+    </a>
+</div>
+               
+<!-- ITEM 6 -->      
+               
+<div class="col-md-4 slidercustomrow item">
+
+    <a class="thumbmale" style="margin-left: 0" href="the-one-sport-giftset-by-dolce-and-gabbana-300349/">
+        <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
+            <div class="ribbon-new">
+                New</div>
+        </div>
+        <div class="">
+        <img src="./img/products/allproducts/dolcegabbana_theonesport_giftset1.jpg" class="imgwidth" alt="The One Sport Giftset" title="The One Sport Giftset">
+        </div>
+        <br>
+        <div class="thumbdescription">
+            <div class=" thumbtitleindex">
+                The One Sport Giftset
+            </div>
+            <div class="clear" style="height: 10px;">
+            </div>
+            <div class="smpbg">
+                Eau de Toilette by Dolce And Gabbana
+            </div>
+            <div class="clear" style="height: 5px;">
+            </div>
+            <div class="thumbpriceindex">
+                <span class="smpbg">From: </span><span class="pricereg">$59.95</span>
+            </div>
+        </div>
+    </a>
+</div>
+
+               
+<!-- ITEM 7 -->      
+               
+<div class="col-md-4 slidercustomrow item">
+
+    <a class="thumbmale" style="margin-left: 0" href="the-one-sport-giftset-by-dolce-and-gabbana-300349/">
+        <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
+            <div class="ribbon-new">
+                New</div>
+        </div>
+        <div class="">
+        <img src="./img/products/allproducts/dolcegabbana_theonesport_giftset1.jpg" width="165" height="165" alt="The One Sport Giftset" title="The One Sport Giftset">
+        </div>
+        <br>
+        <div class="thumbdescription">
+            <div class=" thumbtitleindex">
+                The One Sport Giftset
+            </div>
+            <div class="clear" style="height: 10px;">
+            </div>
+            <div class="smpbg">
+                Eau de Toilette by Dolce And Gabbana
+            </div>
+            <div class="clear" style="height: 5px;">
+            </div>
+            <div class="thumbpriceindex">
+                <span class="smpbg">From: </span><span class="pricereg">$59.95</span>
+            </div>
+        </div>
+    </a>
+</div>
+               
+               
+<!-- ITEM 8 -->      
+               
+<div class="col-md-4 slidercustomrow item">
+
+    <a class="thumbmale" style="margin-left: 0" href="the-one-sport-giftset-by-dolce-and-gabbana-300349/">
+        <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
+            <div class="ribbon-new">
+                New</div>
+        </div>
+        <div class="">
+        <img src="./img/products/allproducts/dolcegabbana_theonesport_giftset1.jpg" class="imgwidth" alt="The One Sport Giftset" title="The One Sport Giftset">
+        </div>
+        <br>
+        <div class="thumbdescription">
+            <div class=" thumbtitleindex">
+                The One Sport Giftset
+            </div>
+            <div class="clear" style="height: 10px;">
+            </div>
+            <div class="smpbg">
+                Eau de Toilette by Dolce And Gabbana
+            </div>
+            <div class="clear" style="height: 5px;">
+            </div>
+            <div class="thumbpriceindex">
+                <span class="smpbg">From: </span><span class="pricereg">$59.95</span>
+            </div>
+        </div>
+    </a>
+</div>
+             
+          
+               
+     </div> 
+   </div>
+   
+   <!-- Indicators -->
+   <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  </ol>
+
+
+        </div><!-- /.carousel -->  
+
+      </div><!-- /.container -->  
+    </article>
+
+  </section>
+</div>
+</div>
+</div><!--cusrowsection03-->
+
+
+
+
+<br><br>
+<!--testimonial end-->
+
+<!--Feeling Sexy Section-->
+<div class="feelsexy">
+  <div class="container">
+    <div class="row">
+      
+      <h1 class="feelsexy">Feeling Sexy</h1>
+      <h4>Hottest Fragrance Store in Southern Hemisphere<h4>
+        <button class="btn btn-lg btn-primary feelsexy-button" type="button">Visit Our Store</button>
+
+      </div>
+    </div>
+  </div>
+
+  <!--Subcribe Section-->
+
+<div class="subcribe">
+<div class="container">
+<div class="row">
+  
+    
+                  <div class="col-md-1">
+                  
+                  </div>
+                  <div class="col-md-5">
+                    <div class="h3center">
+                  <h3>Subscribe Newsletter</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 subcribemain">
+                        <form class=" form-horizontal col-lg-12" id="emailForm" action="ajaxSubmit.php" method="post">
+                            <div class="">
+                                <div class="input-group">
+                                    <input class="form-control input-lg Subscribetxt subcribetxt-btn" placeholder="yourname@example.com" type="text" name="email" id="email">
+                                    <span class="input-group-btn"><button class="btn btn-lg btn-primary Subscribebtn" id="test1" type="submit">Send</button></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-1">
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="footer">
+            <div class="row row-centered">
+
+                <div class="col-md-8 col-centered">
+                    <div class="copyright">Copyright © 2006-2014 Retail Master Pty. Ltd. trading as Feeling Sexy and Agape Hair Design ABN 93 153 569 389. All Rights Reserved.
+                        <br>Use of this website constitutes acceptance of the Feeling Sexy User Agreement and Privacy Policy.</p>
+
+
+                        <img class="img-thumbnail footer-image" src="./img/facebook.png">
+                        <img class="img-thumbnail footer-image" src="./img/gplus.png">
+                        <img class="img-thumbnail footer-image" src="./img/twitter.png">
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#defaultForm').bootstrapValidator({
+                    message: 'This value is not valid',
+                    feedbackIcons: {
+                        valid: 'glyphicon glyphicon-ok',
+                        invalid: 'glyphicon glyphicon-remove',
+                        validating: 'glyphicon glyphicon-refresh'
+                    },
+                    fields: {
+
+
+                        itemnumber: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'Field cannot be empty, Please provide valid details.'
+                                },
+                                digits: {
+                                    message: 'Field cannot be empty, Please provide valid details.'
+                                },
+                                itnumber: {
+                                    country: 'US'
+                                }
+                            }
+                        }
+
+                    }
+                });
+            });
+        </script>
+
+        <!--email validation-->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#emailForm')
+                    .bootstrapValidator({
+                        message: 'This value is not valid',
+                        feedbackIcons: {
+                            valid: 'glyphicon glyphicon-ok',
+                            invalid: 'glyphicon glyphicon-exclamation-sign',
+                            validating: 'glyphicon glyphicon-refresh'
+                        },
+                        fields: {
+
+                            email: {
+                                validators: {
+                                    notEmpty: {
+                                        message: 'Email not found'
+
+                                    },
+                                    emailAddress: {
+                                        message: 'The input is not a valid email address'
+
+                                    }
+                                }
+                            },
+
+                        }
+                    })
+                    .on('success.form.bv', function (e) {
+                        // Prevent form submission
+                        e.preventDefault();
+
+                        // Get the form instance
+                        var $form = $(e.target);
+
+                        // Get the BootstrapValidator instance
+                        var bv = $form.data('bootstrapValidator');
+
+                        // Use Ajax to submit form data
+                        $.post($form.attr('action'), $form.serialize(), function (result) {
+                            console.log(result);
+                        }, 'json');
+                    });
+            });
+        </script>
+
+
+
+        <!--email validation mobile-->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#emailFormmobile')
+                    .bootstrapValidator({
+                        message: 'This value is not valid',
+                        feedbackIcons: {
+                            valid: 'glyphicon glyphicon-ok',
+                            invalid: 'glyphicon glyphicon-exclamation-sign',
+                            validating: 'glyphicon glyphicon-refresh'
+                        },
+                        fields: {
+
+                            email: {
+                                validators: {
+                                    notEmpty: {
+                                        message: 'Email not found'
+
+                                    },
+                                    emailAddress: {
+                                        message: 'The input is not a valid email address'
+
+                                    }
+                                }
+                            },
+
+                        }
+                    })
+                    .on('success.form.bv', function (e) {
+                        // Prevent form submission
+                        e.preventDefault();
+
+                        // Get the form instance
+                        var $form = $(e.target);
+
+                        // Get the BootstrapValidator instance
+                        var bv = $form.data('bootstrapValidator');
+
+                        // Use Ajax to submit form data
+                        $.post($form.attr('action'), $form.serialize(), function (result) {
+                            console.log(result);
+                        }, 'json');
+                    });
+            });
+        </script>
+
+
+</body>
+
+</html>
