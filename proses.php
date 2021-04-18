@@ -9,7 +9,7 @@
  </tr>
 
 <?php  
- include 'koneksi.php';
+ include 'konek.php';
  $no_urut = 0;
  $search = $_POST['search'];
  $query = "SELECT * FROM gudang '%$search%'";
